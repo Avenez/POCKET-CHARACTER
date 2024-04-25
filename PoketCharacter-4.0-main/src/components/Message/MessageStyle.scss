@@ -1,0 +1,158 @@
+@import "../../SCSS/colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.contact {
+    padding-bottom: 10px;
+    padding-inline: 10px;
+
+    &  ::-webkit-input-placeholder {
+      color: #cb9c03;
+  }
+    
+  }
+  
+  .contact button {
+    overflow: visible;
+  }
+  
+  .contact button, select {
+    text-transform: none;
+  }
+  
+  .contact button, .contact input, .contact select, .contact textarea {
+    color: #fff;
+    font: "Montserrat";
+    margin: 0;
+  }
+  
+  .contact input {
+    line-height: normal;
+  }
+  
+  .contact textarea {
+    overflow: auto;
+  }
+  
+  #container {
+    border: solid 3px $rich-black;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+    margin: 0 auto;
+    max-width: 650px;
+    max-height: 650px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .contact form {
+    padding: 45px;
+    background-color: rgb(19, 28, 31);
+  }
+  
+  .contact h2 {
+    color: #fff;
+    margin-bottom: 0;
+    background-color: $rich-black;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+  }
+  
+  .email {
+      float: right;
+      width: 45%;
+  }
+  
+  .contact input[type='text'], [type='email'], select, textarea {
+      background: none;
+    border: none;
+      border-bottom: solid 2px #fff;
+      color: #fff;
+      font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+      margin: 0em 0 1.875em 0;
+      padding: 0 0 0.875em 0;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  .contact input[type='text']:focus, [type='email']:focus, textarea:focus {
+      outline: none;
+      padding: 0 0 0.875em 0;
+  }
+  
+  .message {
+      float: none;
+  }
+  
+  .name {
+      float: left;
+      width: 45%;
+  }
+  
+  .contact select {
+    background: url('http://web.missouri.edu/~blly4b/ISLT7360/FinalProject/FINAL/icon-ios7-arrow-down-32.png') no-repeat right;
+    -webkit-appearance: none;
+  }
+  
+  .contact select::-ms-expand {
+    display: none;
+  }
+  
+  .subject {
+    width: 100%;
+  }
+  
+  .contact textarea {
+      line-height: 150%;
+      height: 150px;
+      resize: none;
+    width: 100%;
+  }
+  
+
+  
+  #form_button {
+    background: none;
+    border: solid 2px #cb9c03;
+    border-radius: 3px;
+    color: #cb9c03;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  .submit {
+    
+    text-align: center;
+  }
+  
+  #form_button:hover {
+    font-weight: bold;
+    background: #cb9c03;
+    color: #ffffff;
+  }

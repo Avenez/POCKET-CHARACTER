@@ -1,0 +1,153 @@
+@import "../../SCSS/colors.scss";
+
+.usersCol{
+    padding: 30px;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: clip;
+}
+
+.userCharacterCol{
+    padding: 20px;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: clip;
+}
+
+
+.userCharacterElementImageContainer{
+    width: 120px;
+    height: 120px;
+}
+
+.userCharacterElementImageContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.userRow{
+    background-color: $rich-black;
+    color: #fff;
+    border: 2px solid $silver;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+
+    &:hover{
+        transition: ease-in-out 0.3s;
+        border: 2px solid $indian-red;
+        // transform: scale(1.01);
+        z-index: 2; 
+    }
+}
+
+.backofficeButton{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background-color: $rich-black;
+    border: 3px solid $rich-black;
+    position: fixed;
+    right: 10px;
+    top: 95%;
+    z-index: 5;
+    transition: ease-in-out 0.3s;
+
+    &:hover{
+      color: $rich-black;
+      border: 3px solid $rich-black;
+      background-color: #fff;
+      transition: ease-in-out 0.3s;
+  }
+}
+
+.userCharacterElement{
+    background: rgb(7,16,19);
+    background: linear-gradient(90deg, rgba(7,16,19,1) 0%, rgba(33,37,41,1) 100%);
+    box-shadow: 0px 15px 9px -3px rgba(0,0,0,0.1);
+}
+
+
+.userEditForm{
+
+    & h6{
+        color: $secondary-red;
+    }
+
+    & input{
+    padding: 10px;
+    border-radius: 20px;}
+}
+
+.characterElementListButtonTop{
+  padding: 0.8rem;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color:$indian-red;
+  border-top-right-radius: 5px;
+  // border-top-left-radius: 5px;
+  transition: ease-in-out 0.2s;
+
+  &:hover{
+    background-color: $indian-red;
+    color: $rich-black;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+
+.characterElementListButtonBottom{
+  padding: 0.8rem;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color:#FFCA2C;
+  border-bottom-right-radius: 5px;
+  // border-bottom-left-radius: 5px;
+  transition: ease-in-out 0.2s;
+
+  &:hover{
+    background-color: #FFCA2C;
+    color: $rich-black;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+
+//--------------animations
+
+.flip-in-ver-right {
+	-webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes flip-in-ver-right {
+    0% {
+      -webkit-transform: rotateY(-80deg);
+              transform: rotateY(-80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-ver-right {
+    0% {
+      -webkit-transform: rotateY(-80deg);
+              transform: rotateY(-80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+  

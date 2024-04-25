@@ -1,0 +1,21 @@
+@import "../../../../SCSS/colors.scss";
+
+
+
+.accordionHoverRide{
+
+}
+
+.accordionHoverRide:hover{
+    border: 2px solid $rich-black !important;
+    box-shadow: 0 0 0 0 white;
+    transform: scale(1);
+}
+
+.accordionBodyHoverRide{
+
+}
+
+.accordionBodyHoverRide:hover{
+    color:$rich-black;
+}

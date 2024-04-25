@@ -1,0 +1,49 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/*
+$rich-black: hsla(195, 46%, 5%, 1);
+$indian-red: hsla(354, 79%, 62%, 1);
+$rosy-brown: hsla(354, 17%, 66%, 1);
+$silver: hsla(0, 0%, 67%, 1);
+$platinum: hsla(220, 5%, 88%, 1);
+*/
+/* SCSS RGB */
+/*
+$rich-black: rgba(7, 16, 19, 1);
+$indian-red: rgba(235, 81, 96, 1);
+$rosy-brown: rgba(183, 153, 156, 1);
+$silver: rgba(170, 170, 170, 1);
+$platinum: rgba(223, 224, 226, 1);
+*/
+/* SCSS Gradient */
+.cursor {
+  cursor: pointer;
+}
+
+.raceContainer {
+  cursor: pointer;
+  text-align: start;
+  border: 2px solid #071013;
+  border-radius: 20px;
+  padding: 1.4rem;
+  padding-inline-start: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.subRaceContainer {
+  border: 2px solid #071013;
+  border-radius: 20px !important;
+  padding: 0.4rem;
+  margin-bottom: 15px;
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #BB2D3B;
+  border: 0 solid #071013;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13);
+}/*# sourceMappingURL=ChooseRace.css.map */

@@ -1,0 +1,78 @@
+@import "../../SCSS/colors.scss";
+
+// -------RESULTS MAIN
+
+.CustomRresultsContainer{
+position: fixed;
+bottom: 10px;
+right: 10px;
+z-index: 100;
+width: 240px;
+
+}
+
+.midRow{
+  min-height: 10px;
+  max-height: 10px
+}
+
+.FoldButton{
+  font-weight: 700;
+  position: relative;
+  right: 110px;
+  bottom: 30px;
+}
+
+.resultSum{
+    // position: fixed;
+    // bottom: 55px;
+    // right: 110px;
+    transform: rotate(90deg) translatex(-28px);
+}
+
+
+
+// ---------MAIN RESULTS
+.MainresultDiv{
+ padding: 1rem;
+ background-color: $primary-color;
+ color: white;
+ border-radius: 15px;
+}
+
+.MainresultTextRow{
+width: 200px;
+text-overflow: ellipsis;
+overflow:hidden;
+}
+
+
+.trowType{
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+  
+
+
+
+
+
+// --------MINI RESULTS
+.miniResultDiv{
+    margin-inline-start: auto;
+    width: 200px;
+    margin-bottom:10px;
+    padding: 0.2rem;
+    border-radius: 15px;
+    background-color: $primary-color;
+    color: white;
+    
+}
+
+
+
+.text-result{
+    color: white;
+}
+
+

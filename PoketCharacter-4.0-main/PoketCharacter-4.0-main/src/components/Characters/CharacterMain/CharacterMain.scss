@@ -1,0 +1,361 @@
+@import "../../../SCSS/colors.scss";
+
+
+
+.bg-silver{
+  background-color: $silver;
+}
+
+.bg-primary-blue{
+  background-color: $primary-blue;
+}
+
+.bg-indian-red{
+  background-color: $indian-red;
+}
+
+.bg-secondary-red{
+  background-color: $secondary-red;
+}
+
+
+
+.text-rick-black{
+  color:$rich-black
+}
+
+.start-rounded{
+  border-bottom-left-radius: 4px;
+}
+
+.end-rounded{
+  border-bottom-right-radius: 4px;
+}
+
+.start-top-rounded{
+  border-top-left-radius: 4px;
+}
+
+.end-top-rounded{
+  border-top-right-radius: 4px;
+}
+
+
+//--------------------------
+/* BEGIN CARD DESIGN */
+.hero {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+    transition: ease-in-out 0.5s;
+  }
+
+  .hero:hover{
+    -webkit-box-shadow: 0px 25px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 25px 14px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 25px 14px 0px rgba(0,0,0,0.75);
+    transition: ease-in-out 0.5s;
+    transform:scale(1.05)
+  }
+  
+  .hero-profile-img {
+    height: 70%;
+
+  }
+  
+  .hero-description-bk {
+    background-image: linear-gradient(0deg , #3f5efb, #fc466b);
+    border-radius: 30px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+  }
+  
+  .second .hero-description-bk {
+    background-image: linear-gradient(-20deg , $rich-black, #464646)
+  }
+  
+  .hero-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 30%;
+    left: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-logo img {
+    height: 100%;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    left: 150px;
+    bottom: 15%;
+  }
+  
+  .hero-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 10%;
+    padding: 10px 20px;
+  }
+  
+  .hero-btn a {
+    color: #fff;
+  }
+  
+  .hero-date {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    bottom: 10%;
+  }
+  /* END CARD DESIGN */
+  
+
+//   .btn i:before {
+//     width: 14px;
+//     height: 14px;
+//     position: fixed;
+//     color: #fff;
+//     background: #0077B5;
+//     padding: 10px;
+//     border-radius: 50%;
+//     top:5px;
+//     right:5px;
+//   }
+
+
+.addButton{
+    z-index: 10;
+position: fixed;
+    bottom:2%;
+    left: 30px;
+    filter: drop-shadow(0px 5px 11px #C62B29);
+    transition: ease-in-out 0.5s;
+    width: 100px;
+    height: 100px;
+}
+
+.addButton:hover{
+    filter: drop-shadow(0px 13px 7px rgba(0, 0, 0, 0.3));
+    transition: ease-in-out 0.5s;
+    transform:scale(1.05)
+}
+
+
+//---------------CHECKBOX
+
+
+
+
+  .checkbox-wrapper-success .checkbox {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .checkbox-wrapper-success label {
+    display: inline-block;
+    color: #00990D;
+    cursor: pointer;
+    position: relative;
+  }
+  .checkbox-wrapper-success label span {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    transform-origin: center;
+    border: 2px solid $rich-black;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 4px;
+    margin-right: 10px;
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+  }
+  .checkbox-wrapper-success label span:before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #00990D;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 11px;
+    left: 7px;
+    transition: width 50ms ease 50ms;
+    transform-origin: 0% 0%;
+  }
+  .checkbox-wrapper-success label span:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: #00990D;
+    position: absolute;
+    transform: rotate(305deg);
+    top: 15px;
+    left: 9px;
+    transition: width 50ms ease;
+    transform-origin: 0% 0%;
+  }
+  .checkbox-wrapper-success label:hover span:before {
+    width: 5px;
+    transition: width 100ms ease;
+  }
+  .checkbox-wrapper-success label:hover span:after {
+    width: 10px;
+    transition: width 150ms ease 100ms;
+  }
+
+  .checkbox-wrapper-success input[type=checkbox] {
+    display: none;
+  }
+  .checkbox-wrapper-success input[type=checkbox]:checked + label span {
+    background-color: #00990D;
+    transform: scale(1.25);
+  }
+  .checkbox-wrapper-success input[type=checkbox]:checked + label span:after {
+    width: 10px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+  .checkbox-wrapper-success input[type=checkbox]:checked + label span:before {
+    width: 5px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+  .checkbox-wrapper-success input[type=checkbox]:checked + label:hover span {
+    background-color: #00990D;
+    transform: scale(1.25);
+  }
+  .checkbox-wrapper-success input[type=checkbox]:checked + label:hover span:after {
+    width: 10px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+  .checkbox-wrapper-success input[type=checkbox]:checked + label:hover span:before {
+    width: 5px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+
+
+  //---------------FAILURE
+
+
+  .checkbox-wrapper-failure .checkbox {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .checkbox-wrapper-failure label {
+    display: inline-block;
+    color: $secondary-red;
+    cursor: pointer;
+    position: relative;
+  }
+  .checkbox-wrapper-failure label span {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    transform-origin: center;
+    border: 2px solid $rich-black;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 4px;
+    margin-right: 10px;
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+  }
+  .checkbox-wrapper-failure label span:before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: $secondary-red;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 11px;
+    left: 7px;
+    transition: width 50ms ease 50ms;
+    transform-origin: 0% 0%;
+  }
+  .checkbox-wrapper-failure label span:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: $secondary-red;
+    position: absolute;
+    transform: rotate(305deg);
+    top: 15px;
+    left: 9px;
+    transition: width 50ms ease;
+    transform-origin: 0% 0%;
+  }
+  .checkbox-wrapper-failure label:hover span:before {
+    width: 5px;
+    transition: width 100ms ease;
+  }
+  .checkbox-wrapper-failure label:hover span:after {
+    width: 10px;
+    transition: width 150ms ease 100ms;
+  }
+
+  .checkbox-wrapper-failure input[type=checkbox] {
+    display: none;
+  }
+  .checkbox-wrapper-failure input[type=checkbox]:checked + label span {
+    background-color: $secondary-red;
+    transform: scale(1.25);
+  }
+  .checkbox-wrapper-failure input[type=checkbox]:checked + label span:after {
+    width: 10px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+  .checkbox-wrapper-failure input[type=checkbox]:checked + label span:before {
+    width: 5px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+  .checkbox-wrapper-failure input[type=checkbox]:checked + label:hover span {
+    background-color: $secondary-red;
+    transform: scale(1.25);
+  }
+  .checkbox-wrapper-failure input[type=checkbox]:checked + label:hover span:after {
+    width: 10px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+  .checkbox-wrapper-failure input[type=checkbox]:checked + label:hover span:before {
+    width: 5px;
+    background: #fff;
+    transition: width 150ms ease 100ms;
+  }
+

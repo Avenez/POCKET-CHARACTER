@@ -1,0 +1,17 @@
+@import "../../../SCSS/colors.scss";
+
+
+.abilitySelect{
+  padding-block: 5px;
+  padding-inline: 20px;
+  border-radius: 5px;
+}
+
+.abilityIcon{
+    margin-inline-start: 15px;
+    width: 35px;
+}
+
+.abilitiesSelect > select{
+  background-color: $rich-black;
+}

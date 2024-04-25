@@ -1,0 +1,19 @@
+@import "../../../SCSS/colors.scss";
+@import "../Class/ClassStyle.scss";
+
+
+.btnBackground{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: $rich-black;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btnBackground:hover{
+    color: $secondary-red;
+    font-weight: bold;
+    // background-color: #212529;
+}

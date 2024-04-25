@@ -1,0 +1,143 @@
+@import "../../SCSS/colors.scss";
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.formIndexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.indexElementsSpacingSelected{
+height: 1px;
+width: 40px;
+border:2px solid black;
+border-radius: 10px;
+margin-inline: 5px;
+}
+
+.indexElementsSpacingNotSelected{    
+height: 1px;
+width: 5px;
+border:2px solid black;
+border-radius: 10px;
+margin-inline: 5px;
+}
+
+.indexElementSelected{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding-inline: 1rem;
+    padding-block: 0.2rem ;
+    border: 2px solid $rich-black;
+    border-radius: 40px;
+    background-color: $indian-red;
+}
+
+.indexElementNotSelected{
+    padding: 0.5rem;
+    color: $silver;
+    font-weight: bold;
+}
+
+//-------INDEX SELECTOR ANIMATION
+.flip-in-ver-left {
+	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes flip-in-ver-left {
+    0% {
+      -webkit-transform: rotateY(80deg);
+              transform: rotateY(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-ver-left {
+    0% {
+      -webkit-transform: rotateY(80deg);
+              transform: rotateY(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+
+
+//-------------CHARACTER NAME---------
+
+.nameInput{
+    padding: 0.6rem;
+    border-radius: 30px;
+    border: 2px solid $rich-black;
+}
+
+.backButton {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background-color: $rich-black;
+    border: 3px solid $rich-black;
+    position: fixed;
+    left: 10px;
+    top: 95%;
+    z-index: 5;
+    transition: ease-in-out 0.3s;
+
+    &:hover{
+      color: $rich-black;
+      border: 3px solid $rich-black;
+      background-color: #fff;
+      transition: ease-in-out 0.3s;
+  }
+  }
+
+
+.nextButton{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background-color: $secondary-red;
+    border: 3px solid $secondary-red;
+    position: fixed;
+    right: 10px;
+    top: 95%;
+    z-index: 5;
+    transition: ease-in-out 0.3s;
+
+    &:hover{
+      color: $secondary-red;
+      border: 3px solid $secondary-red;
+      background-color: #fff;
+      transition: ease-in-out 0.3s;
+  }
+}
+
+
+  
+  @media screen and (max-width: 375px) {
+    .backButton, .nextButton {
+      top: 90%;
+    }
+  }
+
+

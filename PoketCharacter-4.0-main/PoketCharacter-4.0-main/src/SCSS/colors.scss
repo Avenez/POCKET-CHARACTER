@@ -1,0 +1,120 @@
+@import "~bootstrap/scss/functions";
+
+
+
+$primary-color: #071013ff;
+
+
+
+
+
+/* SCSS HEX */
+$rich-black: #071013ff;
+$indian-red: #eb5160ff;
+$secondary-red: #BB2D3B;
+$rosy-brown: #b7999cff;
+$silver: #aaaaaaff;
+$platinum: #dfe0e2ff;
+$primary-gold:#e6c200;
+$primary-blue:rgb(0, 72, 255);
+
+// $custom-colors:(
+//     "danger": $secondary-red
+// );
+
+// @import "~bootstrap/scss/variables";
+
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// @import "~bootstrap/scss/bootstrap.scss";
+
+/* SCSS HSL */
+/*
+$rich-black: hsla(195, 46%, 5%, 1);
+$indian-red: hsla(354, 79%, 62%, 1);
+$rosy-brown: hsla(354, 17%, 66%, 1);
+$silver: hsla(0, 0%, 67%, 1);
+$platinum: hsla(220, 5%, 88%, 1);
+*/
+
+/* SCSS RGB */
+/*
+$rich-black: rgba(7, 16, 19, 1);
+$indian-red: rgba(235, 81, 96, 1);
+$rosy-brown: rgba(183, 153, 156, 1);
+$silver: rgba(170, 170, 170, 1);
+$platinum: rgba(223, 224, 226, 1);
+*/
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-right: linear-gradient(90deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-bottom: linear-gradient(180deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-left: linear-gradient(270deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-top-right: linear-gradient(45deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-bottom-right: linear-gradient(135deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-top-left: linear-gradient(225deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-bottom-left: linear-gradient(315deg, #071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+$gradient-radial: radial-gradient(#071013ff, #eb5160ff, #b7999cff, #aaaaaaff, #dfe0e2ff);
+
+
+.cursor{
+    cursor: pointer;
+}
+
+.cursorLents{
+    cursor: zoom-in;
+}
+
+.bg-secondary-red{
+    background-color: $secondary-red;
+}
+
+.text-rich-black{
+    color: $rich-black;
+}
+.text-gold{
+  color:$primary-gold;
+}
+
+.text-indian-red{
+  color:$indian-red;
+}
+
+.text-secondary-red{
+  color:$secondary-red;
+}
+
+.shadowElement{
+    -webkit-box-shadow: 2px 2px 5px 0px #585858;
+-moz-box-shadow: 2px 2px 5px 0px #585858;
+-o-box-shadow: 2px 2px 5px 0px #585858;
+box-shadow: 2px 2px 5px 0px #585858;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $indian-red; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary-red; 
+  }
+
+// .roboto-condensed-<uniquifier> {
+//     font-family: "Roboto Condensed", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//   }

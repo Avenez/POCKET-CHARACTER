@@ -1,0 +1,38 @@
+@import '../../../SCSS/colors.scss';
+
+
+.classIconContainer{
+    width: 120px; 
+    object-fit: cover;  
+}
+
+.classIcon{
+    object-fit: cover;
+}
+
+.classContainer{
+    cursor: pointer;
+    border: 2px solid $rich-black;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    transition: ease-in-out 0.3s;
+    -webkit-box-shadow: 2px 2px 5px 0px #585858;
+-moz-box-shadow: 2px 2px 5px 0px #585858;
+-o-box-shadow: 2px 2px 5px 0px #585858;
+box-shadow: 2px 2px 5px 0px #585858;
+}
+
+.classContainer:hover{
+    border: 2px solid $secondary-red;
+    color: $secondary-red;
+    -webkit-box-shadow: 5px 5px 10px 0px #585858;
+    -moz-box-shadow: 5px 5px 10px 0px #585858;
+    -o-box-shadow: 5px 5px 10px 0px #585858;
+    box-shadow: 5px 5px 10px 0px #585858; 
+    transform: scale(1.01);
+    transition: ease-in-out 0.3s;
+}
+
+.rowContainer{
+    margin-bottom: 100px;
+}

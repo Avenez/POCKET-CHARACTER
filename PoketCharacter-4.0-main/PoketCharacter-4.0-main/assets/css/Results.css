@@ -1,0 +1,77 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/*
+$rich-black: hsla(195, 46%, 5%, 1);
+$indian-red: hsla(354, 79%, 62%, 1);
+$rosy-brown: hsla(354, 17%, 66%, 1);
+$silver: hsla(0, 0%, 67%, 1);
+$platinum: hsla(220, 5%, 88%, 1);
+*/
+/* SCSS RGB */
+/*
+$rich-black: rgba(7, 16, 19, 1);
+$indian-red: rgba(235, 81, 96, 1);
+$rosy-brown: rgba(183, 153, 156, 1);
+$silver: rgba(170, 170, 170, 1);
+$platinum: rgba(223, 224, 226, 1);
+*/
+/* SCSS Gradient */
+.cursor {
+  cursor: pointer;
+}
+
+.CustomRresultsContainer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  width: 240px;
+}
+
+.midRow {
+  min-height: 10px;
+  max-height: 10px;
+}
+
+.FoldButton {
+  font-weight: 700;
+  position: relative;
+  right: 110px;
+  bottom: 30px;
+}
+
+.resultSum {
+  transform: rotate(90deg) translatex(-28px);
+}
+
+.MainresultDiv {
+  padding: 1rem;
+  background-color: #071013;
+  color: white;
+  border-radius: 15px;
+}
+
+.MainresultTextRow {
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.trowType {
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.miniResultDiv {
+  margin-inline-start: auto;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 0.2rem;
+  border-radius: 15px;
+  background-color: #071013;
+  color: white;
+}
+
+.text-result {
+  color: white;
+}/*# sourceMappingURL=Results.css.map */

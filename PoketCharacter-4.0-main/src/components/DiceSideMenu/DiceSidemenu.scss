@@ -1,0 +1,55 @@
+@import "../../SCSS/colors.scss";
+
+
+.DiceSideMenuDiv{
+    width: 120px;
+    position: fixed;
+    bottom: 10px;
+    left:5px;
+    z-index: 1000;
+}
+
+
+.DiceButton{
+    width: 60px;
+    padding: 5px; 
+    margin-bottom: -14px;
+}
+
+.DicesBox{
+    border: 2px solid transparent;
+    border-radius:100%;
+    width: 70%;
+    margin: auto;
+    // padding: 10px;
+}
+
+.Dices{
+ cursor: pointer;
+ width: 60px; 
+ margin: auto;
+ padding-top: 5px;
+ padding-inline: 3px;
+//  margin-top: 5px;
+//  margin-inline-start: 23px ;
+ margin-bottom: 0.5rem;
+}
+
+.DicesBox:hover{
+border-radius: 100px;
+background-color: $secondary-red;
+}
+
+
+.CollapseStyle{
+    padding-block:0.5rem;
+    background-color: rgb(221, 221, 221);
+    border-radius: 100px;
+    margin-inline: 0.5rem;
+}
+
+.DiceBadge{
+    position: absolute;
+    right: 20px;
+    // z-index: 10;
+}

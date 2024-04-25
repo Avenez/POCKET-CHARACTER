@@ -1,0 +1,26 @@
+@import "../../SCSS/colors.scss";
+
+.editedMessage{
+    max-width: 500px;
+    color: white;
+    padding: 2rem;
+    margin: 3rem;
+    border: 5px solid #393a1d;
+    border-radius: 50px;
+    background: rgb(184, 178, 92);
+background: linear-gradient(180deg, rgb(184, 178, 92) 0%, rgb(94, 91, 48) 100%);
+}
+
+.editedMessage > h1 {
+    font-size: 2.5rem;
+}
+
+.editedMessage > h2 {
+    z-index: 3;
+    font-weight: bold;
+    color:rgb(184, 178, 92) ;
+    position:absolute;
+    top:40%;
+    right: 44%;
+    font-size: 2.5rem;
+}

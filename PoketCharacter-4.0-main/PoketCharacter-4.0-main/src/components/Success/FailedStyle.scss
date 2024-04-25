@@ -1,0 +1,26 @@
+@import "../../SCSS/colors.scss";
+
+.failedMessage{
+    max-width: 500px;
+    color: white;
+    padding: 2rem;
+    margin: 3rem;
+    border: 5px solid #3a1d1d;
+    border-radius: 50px;
+    background: rgb(187, 44, 44);
+background: linear-gradient(180deg, rgb(187, 44, 44) 0%, rgb(94, 48, 48)100%);
+}
+
+.failedMessage > h1 {
+    font-size: 2.5rem;
+}
+
+.failedMessage > h2 {
+    z-index: 3;
+    font-weight: bold;
+    color:rgb(187, 44, 44) ;
+    position:absolute;
+    top:40%;
+    right: 47%;
+    font-size: 2.5rem;
+}

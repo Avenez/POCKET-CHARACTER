@@ -1,0 +1,206 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/*
+$rich-black: hsla(195, 46%, 5%, 1);
+$indian-red: hsla(354, 79%, 62%, 1);
+$rosy-brown: hsla(354, 17%, 66%, 1);
+$silver: hsla(0, 0%, 67%, 1);
+$platinum: hsla(220, 5%, 88%, 1);
+*/
+/* SCSS RGB */
+/*
+$rich-black: rgba(7, 16, 19, 1);
+$indian-red: rgba(235, 81, 96, 1);
+$rosy-brown: rgba(183, 153, 156, 1);
+$silver: rgba(170, 170, 170, 1);
+$platinum: rgba(223, 224, 226, 1);
+*/
+/* SCSS Gradient */
+.cursor {
+  cursor: pointer;
+}
+
+.miniTitle {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #BB2D3B;
+  margin-top: 10px;
+  border: 3px solid #071013;
+  padding: 0.8rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+}
+
+.diceIconHome {
+  width: 25px;
+  filter: invert(100%);
+  margin-left: 10px;
+}
+
+.contactsLinks > a {
+  text-decoration: none;
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.contactsLinks > a:hover {
+  text-decoration: none;
+  color: #eb5160;
+  transition: ease-in-out 0.3s;
+  transform: scale(1.4);
+  z-index: 5;
+}
+
+.rulepediaImg {
+  width: 25px;
+  margin-left: 10px;
+  filter: invert(100%);
+}
+
+.navLinks {
+  font-family: "Roboto Condensed", sans-serif;
+  list-style-type: none;
+}
+
+.navLinks > li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.navLinks > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navLinks > li > .rulesPediaLink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.navLinks > li > .rulesPediaLink::before,
+.navLinks > li > .rulesPediaLink::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.navLinks > li > .rulesPediaLink::before {
+  background-color: #9EFABB;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.navLinks > li > .rulesPediaLink::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #9EFABB;
+}
+
+.navLinks > li > .rulesPediaLink:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.navLinks > li > .rulesPediaLink:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.navLinks > li > a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.navLinks > li > a::before,
+.navLinks > li > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.navLinks > li > a::before {
+  background-color: #eb5160;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.navLinks > li > a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #eb5160;
+}
+
+.navLinks > li > a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.navLinks > li > a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.navLinks > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.button-Log {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  -webkit-text-decoration: none #0d172a solid;
+          text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: ease-in-out 0.3s;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.button-Log:hover {
+  background-color: #fff;
+  color: #071013;
+  transition: ease-in-out 0.3s;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 768px) {
+  .button-Log {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,35 @@
+@import "../../SCSS/colors.scss";
+
+.image-div {
+    width: 250px;
+    // margin-bottom: -100px;
+  }
+  
+  .not-found-img {
+    object-fit: cover;
+    filter: sepia(100%);
+    filter: drop-shadow(3px 3px 5px red) sepia(100%);
+  }
+
+
+  .notFoundButton{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.6rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background-color: $rich-black;
+    border: 3px solid $rich-black;
+    z-index: 5;
+    transition: ease-in-out 0.3s;
+
+    &:hover{
+      color: $rich-black;
+      font-weight: bold;
+      border: 3px solid $rich-black;
+      background-color: $secondary-red;
+      transition: ease-in-out 0.3s;
+  }
+  }

@@ -1,0 +1,10 @@
+@import "../../../../SCSS/colors.scss";
+
+.spellSlotsRow{
+    padding-bottom: 2px;
+        
+}
+
+.spellSlotsRow:nth-child(even){
+    background-color: $silver;
+}
