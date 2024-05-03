@@ -91,7 +91,7 @@ export default function Navbar() {
                     </li>
                     <li>
                       <a href="https://dungeonedraghi.it/regole/" target="_blank" className="">
-                        Rules-Pedia
+                        Dungeon & Draghi
                       </a>
                       <img src="\images\rulesPedia.webp" alt="dungeonedraghi" className="rulepediaImg" />
                     </li>
